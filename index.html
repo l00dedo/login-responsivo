@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilos/landscape.css" media="screen and (orientation: landscape)">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="img">
-                Foto
+                
             </div>
 
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurções no seu ambiente.</p>
-                <form action="login.php" method="post">
-                    
+                <form action="login.php" method="post" autocomplete="off">
+                    <div class="email">
+                        <label for="iemail">
+                            <img src="imagens/person.png" alt="" class="user-password">
+                        </label>
+
+                        <input type="email" name="email" id="iemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+                    </div>
+
+                    <div class="password">
+                        <label for="ipassword">
+                            <img src="imagens/key.png" alt="" class="user-password">
+                        </label>
+                        <input type="password" name="password" id="ipassword" required>
+                    </div>
+
+                    <input type="submit" value="Entrar" id="submit">
+                    <input type="button" value="Esqueci a senha" id="forg-pass">
+
                 </form>
             </div>
         </section>
