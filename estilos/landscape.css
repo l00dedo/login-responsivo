@@ -9,7 +9,7 @@
 }
 
 body, html {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 
@@ -19,26 +19,25 @@ body, html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--lilas), var(--verde));
+    background-color: var(--verde);
 }
 
 main {
     position: relative;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
 }
 
 section#login {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     background-color: white;
     width: 80%;
     border-radius: 15px;
-    overflow: hidden;
     height: 60%;
+    min-height: 800px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.363);
+    margin: 90px auto 90px auto;
 }
 
 div#img {
@@ -53,6 +52,7 @@ div#img {
     height: 100%;
     width: 40%;
     display: inline-block;
+    border-radius: 0px 15px 15px 0px;
 }
 
 #form {
